@@ -1,0 +1,55 @@
+body {
+    background-color: #bde0fe;
+}
+
+h1 {
+    width: 25%;
+    margin-bottom: 3%;
+    position: relative;
+    left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.flex-container {
+    position: relative;
+    left: 32%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 130px;
+    height: 130px;
+    background-color: #ffbe0b;
+    margin: 15px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: 2s ease;
+}
+
+.back,
+.front {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.back {
+    color: darkred;
+    transform: rotateY(180deg);
+}
